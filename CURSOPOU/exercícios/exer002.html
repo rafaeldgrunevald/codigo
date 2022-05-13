@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Calcular a Média</h1>
+    Minha primeira nota foi <input type="text" name="n1" id="n1"><br>
+    Minha segunda nota foi <input type="text" name="n2" id="n2"><br>
+    Minha terceira nota foi <input type="text" name="n3" id="n3"><br>
+    <input type="button" value="Calcular Média" onclick = "media()">
+    <div id="resp"></div>
+
+    <script>
+        function media() {
+            
+            let nota1 = Number(document.querySelector("input#n1").value) // Não fazer Number(document.querySelector("input#n1")) pq ai tu pega um obj e tenta transforma em numb (burrice)
+            let nota2 = Number(document.querySelector("input#n2").value)
+            let nota3 = Number(document.querySelector("input#n3").value)
+            let resp = document.querySelector("div#resp")
+
+            let media = nota1 + nota2 + nota3
+
+            media = media / 3
+
+            resp.innerHTML = `Sua media é ${media}. `
+
+            if (media >= 7) {
+                resp.innerHTML += "Você <strong>passou!</strong>"
+            } else {
+                resp.innerHTML += "Você <strong>reprovou!</strong>" 
+            }
+
+        }
+    </script>
+</body>
+</html>

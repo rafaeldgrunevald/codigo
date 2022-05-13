@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicador</title>
+</head>
+<body>
+    <h1>Duplicador</h1>
+    Coloque os numeros que vão ser duplicados aqui: <input type="text" name="entrada" id="entrada">
+    <input type="button" value="Duplicar!" onclick = "dupli()">
+    <div id = "saida"></div>
+    <script>
+        function dupli() {
+            let entrada = document.querySelector("input#entrada")
+            let saida = document.querySelector("div#saida")
+            let multi = []
+
+            saida.innerHTML = `Seus numeros são ${entrada.value} `
+            
+            for(let i = 0; i < entrada.value.length; i++){
+                multi[i] = entrada.value[i] * 2
+            }
+        
+            saida.innerHTML += `e seus numeros duplicados equivalem a ${multi.toString()}`
+        }
+
+    </script>
+</body>
+</html>

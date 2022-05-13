@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores (cria?)</title>
+</head>
+<body>
+    Primeira quantidade de numeros <input type="text" name="tamanho1" id="tamanho1"><br>
+    Coloque os numeros <input type="text" name="entrada1" id="entrada1"><br>
+    Segunda quantidade de numeros <input type="text" name="tamanho2" id="tamanho2"><br>
+    Coloque os numeros <input type="text" name="entrada2" id="entrada2"><br>
+    <input type="button" value="Mostrar" onclick="mostra()">
+    <div id="resp1"></div>
+    <div id="resp2"></div>
+
+    <script>
+        function mostra() {
+            
+            let tamanho1 = Number(document.querySelector("input#tamanho1").value)
+            let tamanho2 = Number(document.querySelector("input#tamanho2").value)
+            let entrada1 = (document.querySelector("input#entrada1").value)
+            let entrada2 = (document.querySelector("input#entrada2").value)
+            let resp1 = document.querySelector("div#resp1")
+            let resp2 = document.querySelector("div#resp2")
+            
+                if (entrada1.length == tamanho1) {
+                    resp1.innerHTML = `Seus numeros foram: ${entrada1}`
+                } else {
+                    resp1.innerHTML = "VOCÊ FOI UM IMBECIL"
+                }
+                
+                if (entrada2.length == tamanho2) {
+                    resp2.innerHTML = `Seus numeros foram: ${entrada2}`
+                } else {
+                    resp2.innerHTML = "VOCÊ FOI UM IMBECIL"
+                }
+
+                /*
+                TOMAR CUIDADO COM OS TIPOS CACETEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                */
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contita</title>
+</head>
+<body>
+    Defina a <input type="text" name="a" id="a"><br>
+    Defina b <input type="text" name="b" id="b"><br>
+    Defina c <input type="text" name="c" id="c"><br>
+    Defina d <input type="text" name="d" id="d"><br>
+    <input type="button" value="Calcular" onclick="calc()">
+    <div id="resp"></div>
+
+    <script>
+        function calc() {
+            let a = Number(document.querySelector("input#a").value)
+            let b = Number(document.querySelector("input#b").value)
+            let c = Number(document.querySelector("input#c").value)
+            let d = Number(document.querySelector("input#d").value)
+            let x = a + b
+            let y = x * c
+            let resp = document.querySelector("div#resp")
+
+            if (d != 0) {
+                y = y / d;
+            }
+
+            if (y <= -1) {
+                y = y * -1
+                resp.innerHTML = y
+            } else {
+                resp.innerHTML = y
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>

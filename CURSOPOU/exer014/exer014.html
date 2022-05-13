@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Esse comando linka o arquivo HTML com o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Seu Caixa Eletrônico!</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Adicione um produto: <input type="text" name="prod" id="prod"> <br><br>
+                Adiocione um valor: <input type="number" name="valor" id="valor" min="1"> <br>
+                <input type="button" value="Mostrar" onclick="mostra()">
+            </p>
+        </div>
+        <div>
+            <ul id="list">
+            </ul>
+            <p id="resp">
+
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Buraco do Abrolo</p>
+    </footer>
+    <script src="script.js"></script> <!-- Esse comando linka o arquivo HTML com o arquivo JS -->
+</body>
+</html>
