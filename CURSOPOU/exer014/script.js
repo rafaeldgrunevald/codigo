@@ -15,13 +15,13 @@ function mostra() {
 
     resposta.innerHTML = ""
 
-    li.innerHTML = `Seu produto é ${produto} que vale ${valor} reais.` 
+    li.innerHTML = `Produto é ${produto} que vale ${valor} reais.` 
     lista.appendChild(li)
     valores.push(valor)
     
     soma += valores[valores.length - 1]    
 
-    resposta.innerHTML += `A soma dos valores é ${soma}. <br>`
+    resposta.innerHTML += `Soma dos valores é ${soma}. <br>`
     resposta.appendChild(excluir)
     
 }
