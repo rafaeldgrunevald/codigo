@@ -44,7 +44,7 @@ function sumir() {
 
 function sumir_indivi(event) {
     let pos = event.currentTarget.pos
-    listass[pos].remove() // Remove retira o elemento to HTML
+    listass[pos].remove() // Remove retira o elemento do HTML
     listass[pos] = "" // Remove da Array listass a li expecifica
     soma -= valores[pos]
     resposta.innerHTML = `Soma dos valores é ${soma}. <br>`
