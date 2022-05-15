@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game dos chads</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Esse comando linka o arquivo HTML com o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>RPG do tamagoshizin</h1>
+    </header>
+    <section>
+        <div id="player">
+            <h3>PLAYER</h3>
+            <div id="info1" class="user">
+                <p id="vida">VIDA: 100/100</p>
+                <p id="moeda">MOEDAS: 0</p>
+                <p id="xp">XP: 0/100</p>
+                <p id="poção">POÇÃO: 5</p>
+                <p id="level">LEVEL: 1</p>
+                <p id="bomba">BOMBA: 0</p>
+                <p id="dia">DIA: 1</p>
+                <p></p>
+                <input type="button" value="Atacar" onclick="ataque()">
+                <input type="button" value="Descansar" onclick="descanço()">
+                <input type="button" value="Beber Poção" onclick="beberpot()">
+                <input type="button" value="Usar Bomba" onclick="usarbomba()">
+            </div>
+        </div>
+        <div id="enemigos">
+            <h3>ENEMIGOS</h3>
+            <div id="info2">
+                <p id="vidaenemigo"></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Buraco do Abrolo</p>
+    </footer>
+    <script src="script.js"></script> <!-- Esse comando linka o arquivo HTML com o arquivo JS -->
+</body>
+</html>

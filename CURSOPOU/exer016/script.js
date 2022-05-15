@@ -9,6 +9,9 @@ let info_data = document.querySelector("p#dia")
 
 let info = document.querySelector("div#info")
 
+let lvl = 0
+let info_level = document.querySelector("p#level")
+
 function ataque() {
     vida -= getRandomInt(1, 50)
     info_vida.innerHTML = `VIDA: ${vida}/100 <br>`
@@ -21,6 +24,13 @@ function ataque() {
         info_xp.innerHTML = ""
         info_data.innerHTML = ""
         info.innerHTML = "VOCÊ MORREU!"
+    }
+
+    if (xp > 100) {
+        lvl++
+        info_level.innerHTML = `LEVEL: ${lvl} <br>`
+        xp = 0
+        info_xp.innerHTML = `XP: ${xp}/100 <br>`
     }
 } 
 
